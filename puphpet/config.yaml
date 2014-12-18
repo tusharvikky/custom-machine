@@ -64,7 +64,6 @@ vagrantfile-local:
 server:
     install: '1'
     packages:
-        - git
         - curl
 firewall:
     install: '1'
