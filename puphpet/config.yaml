@@ -10,8 +10,8 @@ vagrantfile-local:
         network:
             private_network: 192.168.56.101
             forwarded_port:
-                IYD49adBfJHS:
-                    host: '8693'
+                YsnMW2AB8mkZ:
+                    host: '7701'
                     guest: '22'
         post_up_message: ''
         provider:
@@ -32,7 +32,7 @@ vagrantfile-local:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            h6z06QL6ie1j:
+            dgicURk4EL92:
                 owner: www-data
                 group: www-data
                 source: ./
@@ -80,7 +80,7 @@ apache:
     modules:
         - rewrite
     vhosts:
-        NSv31yFsLoxa:
+        iqNo2LKzXpWL:
             servername: edu.dev
             serveraliases:
                 - www.edu.dev
@@ -100,7 +100,7 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
-        11U82mHQSzAH:
+        LtOKFvx2PBHj:
             servername: humapp.dev
             serveraliases:
                 - www.humapp.dev
@@ -120,7 +120,7 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
-    mod_pagespeed: '0'
+    mod_pagespeed: 0
 nginx:
     install: '0'
     settings:
@@ -129,7 +129,7 @@ nginx:
         proxy_buffers: '4 256k'
     upstreams: {  }
     vhosts:
-        m4fWbGJa0MZL:
+        UwhSxj6P8RWS:
             proxy: ''
             server_name: awesome.dev
             server_aliases:
@@ -165,7 +165,7 @@ php:
         error_reporting: '-1'
         session.save_path: /var/lib/php/session
     timezone: America/Chicago
-    mod_php: '1'
+    mod_php: 0
 hhvm:
     install: '0'
     nightly: 0
@@ -198,7 +198,7 @@ drush:
 ruby:
     install: '1'
     versions:
-        SWstzbJIZQmz:
+        3lzHDIITk8wf:
             version: ''
 nodejs:
     install: '0'
@@ -207,7 +207,7 @@ python:
     install: '1'
     packages: {  }
     versions:
-        5dQdxURCbiga:
+        oaF298cgrtxg:
             version: ''
 mysql:
     install: '0'
@@ -215,7 +215,7 @@ mysql:
     root_password: '123'
     adminer: 0
     databases:
-        jCIwH5665IPf:
+        w4xFhmWrC0V8:
             grant:
                 - ALL
             name: dbname
@@ -248,7 +248,15 @@ mongodb:
     settings:
         auth: 1
         port: '27017'
-    databases: {  }
+    databases:
+        Y92iSSChCHVH:
+            name: edu
+            user: edu
+            password: edu
+        3SV9M6qYREW8:
+            name: humapp
+            user: humapp
+            password: humapp
 redis:
     install: '0'
     settings:
